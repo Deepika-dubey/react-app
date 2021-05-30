@@ -3,16 +3,13 @@ function Carousel(){
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" style={{height:500}}>
     <div class="carousel-item active">
-      <img src="carousel1.jpg" class="d-block w-100" alt="..." />
+      <img src="cake1.jpg" class="d-block w-100" alt="..." />
     </div>
     <div class="carousel-item">
-      <img src="carousel2.jpg" class="d-block w-100" alt="..." /> 
+      <img src="cake2.jpg" class="d-block w-100" alt="..." /> 
     </div>
     <div class="carousel-item">
-      <img src="carousel3.jpg" class="d-block w-100" alt="..." />
-    </div>
-    <div class="carousel-item">
-      <img src="carousel4.jpg" class="d-block w-100" alt="..." />
+      <img src="cake3.jpg" class="d-block w-100" alt="..." />
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
