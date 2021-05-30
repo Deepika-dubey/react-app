@@ -59,8 +59,15 @@ class Login extends Component {
     }
 
      render(){
+         const mystlye = {
+            margin: "auto",
+            width: "60%",
+            border: "3px solid #73AD21",
+            padding: "10px"
+         }
          return(
-             <div>
+             <div style={mystlye}>
+                 <h1>Signup Form</h1>
                 <form onSubmit={this.handleSubmit}>
                 <div class="form-group" style={{width:400}}>
                     <label for="email">Email Address:</label>
