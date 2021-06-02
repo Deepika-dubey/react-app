@@ -1,4 +1,14 @@
+import {useEffect, useState} from "react";
+
 function Navbar(props){
+  //var [isloggedin, setUser] = useState(props.isloggedin);
+  /*useEffect(()=>{
+    setUser(true)
+  })*/
+  let logout =()=>{
+    //setUser(false)
+  }
+
     return(
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Cake Shop</a>
@@ -19,6 +29,8 @@ function Navbar(props){
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      {!props.isloggedin && <button class="btn btn-primary">Login</button>}
+      {props.isloggedin && <button onClick={logout} class="btn btn-danger">Logout</button>}
     </form>
   </div>
 </nav>

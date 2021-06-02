@@ -58,6 +58,10 @@ class Login extends Component {
         return isValid;
     }
 
+    login=()=>{
+      this.props.callme()
+    }
+
      render(){
          const mystlye = {
             margin: "auto",
@@ -76,7 +80,7 @@ class Login extends Component {
 
                     <div className="text-danger">{this.state.errors.email}</div>
                 </div>
-                <input type="submit" value="Signup" class="btn btn-success" />
+                <input type="submit" value="Signup" onClick={this.login} class="btn btn-success" />
                 </form>
              </div>
          )
